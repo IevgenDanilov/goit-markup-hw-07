@@ -702,6 +702,11 @@ h2 {
   padding: 60px 0;
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   color: var(--title-text-color);
   font-family: Raleway;
@@ -746,7 +751,6 @@ h2 {
 
 .invite {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .invite-text,
@@ -793,13 +797,12 @@ h2 {
 
 .subscribe {
   margin-left: 90px;
-  padding-top: 12px;
 }
 
 .form-subscribe {
   display: flex;
   margin-top: 20px;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .form-subscribe-input {
