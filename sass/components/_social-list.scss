@@ -1,25 +1,27 @@
-.subscribe__form {
-  display: flex;
-  margin-top: 20px;
-}
+.subscribe__ {
+  &form {
+    display: flex;
+    margin-top: 20px;
+  }
 
-.subscribe__input {
-  width: 300px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25px;
-  display: flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 15px;
-  background-color: transparent;
-  margin-right: 12px;
-}
+  &input {
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    background-color: transparent;
+    margin-right: 12px;
+  }
 
-.subscribe__input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }

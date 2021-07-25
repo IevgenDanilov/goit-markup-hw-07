@@ -123,13 +123,7 @@ img {
   border: 1px solid transparent;
 }
 
-.subscribe__btn-icon {
-  display: flex;
-  margin-left: 10px;
-}
-
-.modal__btn:hover,
-.modal__btn:focus,
+.modal__btn:hover, .modal__btn:focus,
 .subscribe__btn:hover,
 .subscribe__btn:focus {
   fill: var(--accent-color);
@@ -137,6 +131,11 @@ img {
   background-color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__btn-icon {
+  display: flex;
+  margin-left: 10px;
 }
 
 .social__list {
@@ -167,8 +166,7 @@ img {
   fill: #afb1b8;
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -200,8 +198,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-.social__footer-link:hover,
-.social__footer-link:focus {
+.social__footer-link:hover, .social__footer-link:focus {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -509,17 +506,13 @@ img {
   padding: 25px 0 25px 0;
 }
 
-/* Примесь логотипа в хедере */
-/* Модификатор логотипа в хедере */
 .logo__header-mix--inverse {
   color: var(--primary-text-color);
 }
 
-/* ============== NAVIGATION ============== */
-.site-nav__item {
-  margin-right: 50px;
-  position: relative;
-  display: block;
+.site-nav {
+  display: flex;
+  margin: auto 0;
 }
 
 .site-nav .link {
@@ -538,18 +531,13 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav {
-  display: flex;
-  margin: auto 0;
-}
-
 .site-nav .current {
   color: var(--accent-color);
 }
 
 .site-nav .link:hover::after,
 .site-nav .link:focus::after,
-.current::after {
+.site-nav .current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -559,6 +547,12 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+  position: relative;
+  display: block;
 }
 
 .auth-nav {
@@ -581,8 +575,7 @@ img {
   align-items: center;
 }
 
-.auth-nav .button:hover,
-.auth-nav .button:focus {
+.auth-nav .button:hover, .auth-nav .button:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -619,7 +612,7 @@ img {
   background-size: cover;
 }
 
-.feature__item .feature__text {
+.feature__text {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -778,8 +771,7 @@ img {
   fill: #afb1b8;
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -788,6 +780,14 @@ img {
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .projects a {
@@ -805,14 +805,6 @@ img {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
-}
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .projects__item {
@@ -833,7 +825,7 @@ img {
 }
 
 .projects__description p,
-h2 {
+.projects__ h2 {
   margin: 0;
 }
 
